@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleDevs - Viste como un programador</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2d2d2d;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        h1::after {
+            content: " { }";
+            color: #00ff00;
+        }
+        h2 {
+            font-size: 24px;
+            color: #aaaaaa;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #00ff00;
+            color: #000;
+            border-radius: 5px;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .producto {
+            background-color: #2d2d2d;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 8px;
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .producto h3 {
+            color: #00ff00;
+        }
+        .producto p {
+            font-size: 16px;
+            color: #cccccc;
+        }
+        .producto .precio {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ff00;
+        }
+        footer {
+            background-color: #222;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>StyleDevs</h1>
+    <h2>Viste con código, luce como un programador</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Liquidación</a></li>
+        <li><a href="#">Carrito de Compras</a></li>
+    </ul>
+</nav>
+
+<section class="productos">
+    <div class="producto">
+        <img src="gorra_programador.jpg" alt="Gorra de programador">
+        <h3>Gorra "Code Mode"</h3>
+        <p>Perfecta para programadores, con un diseño inspirado en código.</p>
+        <p class="precio">C$ 650</p>
+    </div>
+    <div class="producto">
+        <img src="camiseta_programador.jpg" alt="Camiseta de programador">
+        <h3>Camiseta "Hello, World!"</h3>
+        <p>Divertida y geek, ideal para programadores creativos.</p>
+        <p class="precio">C$ 550</p>
+    </div>
+    <div class="producto">
+        <img src="mochila_programador.jpg" alt="Mochila para laptop">
+        <h3>Mochila "DevPack"</h3>
+        <p>El mejor accesorio para transportar tu laptop con estilo programador.</p>
+        <p class="precio">C$ 2200</p>
+    </div>
+</section>
+
+<footer>
+    <p>Sitio web creado por <strong>Edilberto Lacayo</strong>. Programador, diseñador y Propietario de StyleDevs.</p>
+    <p>León|Nicaragua</p>
+</footer>
+
+</body>
+</html>
